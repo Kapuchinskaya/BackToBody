@@ -1,38 +1,117 @@
+/*=============================
+          GENERAL
+===============================*/
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Munale Loird';
+  src: local('Munale Loird'), url(MunaleLoird.otf) format('opentype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* { 
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family:'Munale Loird'}
+
+TODO/* add Montserrat as basic text font and Caveat for hand-written text. Munale - for h1 and possibly logo*/ 
+
+
+/*=============================
+          HEADINGS
+===============================*/
+
+h4 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+/*=============================
+          HEADER
+===============================*/
+.header {
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 70px;
+background-color: #f7f6f4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logoImg {
+  height: 75%;
+  border-radius: 50%;
+}
+
+.header ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+.nav-links li{
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-links a{
+  color: #a37f68;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 16px;
 }
+
+.nav-links a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #18272F;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.nav-links a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.contactButtonDraft {
+  background-color: #f7f6f4;
+  color: #a37f68;
+  border: 1px solid #a37f68;
+  border-radius: 50px;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.contactButtonDraft:hover {
+  background-color: #a37f68;
+  color: #f7f6f4;
+  border: 1px solid #a37f68;
+  transition: all .3s ease;
+}
+
+.burger {
+  display: none;
+} 
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: #a37f68;
+  margin: 5px;
+}
+
