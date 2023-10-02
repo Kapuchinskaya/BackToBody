@@ -2,7 +2,7 @@ const Logo = () => {
   return (
     <>
       <img src="./resources/logo.jpg" alt="Logo" className="logoImg" />
-      {/* <h4>BACK TO BODY</h4> */}
+      {/* <div className="h4123">Back to body</div> */}
     </>
   );
 };
