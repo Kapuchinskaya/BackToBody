@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Contacts from "./Contacts";
 import Logo from "./Logo";
+import "./Header.css";
+import NavigationElement from "./NavigationElement";
 
 const Header = () => {
   const [isBurgerToggled, setIsBurgerToggled] = useState(false);
@@ -13,18 +15,10 @@ const Header = () => {
     <nav className="header">
       <Logo />
       <ul className={`nav-links ${isBurgerToggled ? "nav-active" : ""}`}>
-        <li className={isBurgerToggled ? "nav-links-active" : ""}>
-          <a href="#">О нас</a>
-        </li>
-        <li>
-          <a href="#">Наша программа</a>
-        </li>
-        <li>
-          <a href="#">Цены</a>
-        </li>
-        <li>
-          <a href="#">Галерея</a>
-        </li>
+        <NavigationElement navigationElementText="О нас" />
+        <NavigationElement navigationElementText="Наша программа" />
+        <NavigationElement navigationElementText="Цены" />
+        <NavigationElement navigationElementText="Галерея" />
         <Contacts />
       </ul>
       <div className="burger" onClick={toggleBurgerHandler}>
