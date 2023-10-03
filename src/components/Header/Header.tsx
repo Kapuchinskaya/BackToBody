@@ -11,14 +11,20 @@ const Header = () => {
     setIsBurgerToggled(!isBurgerToggled);
   };
 
+  const navigationElements: string[] = [
+    "О нас",
+    "Наша программа",
+    "Цены",
+    "Галерея",
+  ];
+
   return (
     <nav className="header">
       <Logo />
       <ul className={`nav-links ${isBurgerToggled ? "nav-active" : ""}`}>
-        <NavigationElement navigationElementText="О нас" />
-        <NavigationElement navigationElementText="Наша программа" />
-        <NavigationElement navigationElementText="Цены" />
-        <NavigationElement navigationElementText="Галерея" />
+        {navigationElements.map((el) => {
+          return <NavigationElement navigationElementText={el} key={el} />;
+        })}
         <Contacts />
       </ul>
       <div className="burger" onClick={toggleBurgerHandler}>
