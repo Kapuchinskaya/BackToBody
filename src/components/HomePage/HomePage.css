@@ -1,0 +1,272 @@
+h1 {
+  font-family: "Kaushan Script";
+  text-transform: uppercase;
+  color: rgb(62, 73, 57);
+}
+.homePageTextContainer {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.homePage {
+  height: calc(100vh - 70px);
+  background-color: #f7f6f4;
+  position: relative;
+}
+
+/*first dimension*/
+@media screen and (max-width: 767px) {
+  .homePage {
+    height: calc(80vh - 70px);
+    width: 100%;
+  }
+
+  .homePageTextContainer {
+    position: absolute;
+    height: 70%;
+    margin: 100px 00px 0px 50px;
+  }
+
+  h1 {
+    font-size: 110px;
+    font-weight: 100;
+    margin-bottom: -20px;
+  }
+
+  h2 {
+    margin: 20px;
+    color: rgb(138, 155, 110);
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .homePageMainImage {
+    position: absolute;
+    overflow: hidden;
+    width: 70%;
+    height: auto;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .homePageDecorationImage {
+    display: none;
+  }
+}
+
+/*Mobile Phones + Small Tablet*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .homePage {
+    position: relative;
+    height: calc(100vh - 70px);
+    width: 100%;
+  }
+
+  .homePageTextContainer {
+    position: absolute;
+    height: 70%;
+    margin: 50px 00px 0px 50px;
+  }
+
+  h1 {
+    font-size: 140px;
+    font-weight: 100;
+    margin-bottom: -20px;
+  }
+
+  h2 {
+    margin: 25px;
+    color: rgb(138, 155, 110);
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .homePageMainImage {
+    position: absolute;
+    overflow: hidden;
+    width: 75%;
+    height: auto;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .homePageDecorationImage {
+    display: none;
+  }
+}
+
+/*Tablets*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .homePage {
+    position: relative;
+    height: calc(100vh - 70px);
+    width: 100%;
+  }
+
+  .homePageTextContainer {
+    position: absolute;
+    height: 70%;
+    margin: 100px 00px 0px 50px;
+  }
+
+  h1 {
+    font-size: 150px;
+    font-weight: 100;
+    margin-bottom: -20px;
+  }
+
+  h2 {
+    margin: 27px;
+    color: rgb(138, 155, 110);
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .homePageMainImage {
+    position: absolute;
+    overflow: hidden;
+    height: 70%;
+    width: auto;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .homePageDecorationImage {
+    display: none;
+  }
+}
+
+/*Desktops and Laptops mini*/
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  .homePage {
+    position: relative;
+    height: calc(100vh - 70px);
+    width: 100%;
+  }
+
+  .homePageTextContainer {
+    position: absolute;
+    margin: 100px 0px 0px 50px;
+  }
+
+  h1 {
+    font-size: 170px;
+    font-weight: 100;
+    margin-bottom: -20px;
+  }
+
+  h2 {
+    margin: 30px;
+    color: rgb(138, 155, 110);
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .homePageMainImage {
+    position: absolute;
+    overflow: hidden;
+    height: 70%;
+    width: auto;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .homePageDecorationImage {
+    height: 45%;
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    rotate: 30deg;
+  }
+}
+
+/*Desktops and Laptops midi*/
+@media screen and (min-width: 1400px) and (max-width: 1599px) {
+  .homePage {
+    position: relative;
+    height: calc(100vh - 70px);
+    width: 100%;
+  }
+
+  .homePageTextContainer {
+    position: absolute;
+    height: 70%;
+    margin: 100px 0px 0px 150px;
+  }
+
+  h1 {
+    font-size: 170px;
+    font-weight: 100;
+    margin-bottom: -20px;
+  }
+
+  h2 {
+    margin-left: 30px;
+    color: rgb(138, 155, 110);
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .homePageMainImage {
+    position: absolute;
+    overflow: hidden;
+    height: 70%;
+    width: auto;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .homePageDecorationImage {
+    height: 45%;
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    rotate: 30deg;
+  }
+}
+
+/*Desktops and Laptops maxi*/
+@media screen and (min-width: 1600px) {
+  .homePage {
+    position: relative;
+    padding: calc(100vh - 1400px);
+    width: 100%;
+  }
+
+  .homePageTextContainer {
+    position: absolute;
+    height: 70%;
+    margin: 100px 0px 0px 150px;
+  }
+
+  h1 {
+    font-size: 170px;
+    font-weight: 100;
+    margin-bottom: -20px;
+  }
+
+  h2 {
+    margin-left: 30px;
+    color: rgb(138, 155, 110);
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .homePageMainImage {
+    position: absolute;
+    overflow: hidden;
+    height: 90%;
+    width: auto;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .homePageDecorationImage {
+    height: 55%;
+    position: absolute;
+    bottom: -140px;
+    left: -144px;
+    rotate: 30deg;
+  }
+}
